@@ -1,0 +1,14 @@
+# Intro
+
+This app demonstrates how to open a new window after an async request. To try
+it:
+
+1. Go to the [admin page](/admin), where you'll see a list of users. Note that
+   the [main app](/app) is not available yet because you're not logged in.
+1. Select a user from the list and click "Log in with GET". This will open a new
+   window with a loading indicator while an auth token is fetched.
+1. Once a token has been fetched, you'll be sent to the [main app](/app) and
+   logged in as the selected user. _Note:_ some users will cause an "error"
+   while generating the token as an example for error handling.
+1. You can also use the "Log in with POST" button, which demonstrates how to
+   trigger a POST request after the auth token has been fetched.

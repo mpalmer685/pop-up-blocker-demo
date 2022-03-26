@@ -1,0 +1,59 @@
+{
+  "name": "pop-up-blocker-demo",
+  "private": true,
+  "description": "How to open a new window without triggering pop-up blockers",
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build": "run-s build:*",
+    "build:css": "npm run generate:css -- --minify",
+    "build:js": "remix build",
+    "dev": "run-p dev:*",
+    "dev:css": "npm run generate:css -- --watch",
+    "dev:js": "remix dev",
+    "generate:css": "npx tailwindcss -o ./app/tailwind.css",
+    "postinstall": "remix setup node",
+    "start": "remix-serve build"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "embeddedLanguageFormatting": "auto",
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "proseWrap": "always",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "vueIndentScriptAndStyle": false
+  },
+  "dependencies": {
+    "@remix-run/react": "1.3.2",
+    "@remix-run/serve": "1.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remix": "1.3.2"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "1.3.2",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/react": "^17.0.41",
+    "@types/react-dom": "^17.0.14",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.0",
+    "prettier-plugin-packagejson": "^2.2.16",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
