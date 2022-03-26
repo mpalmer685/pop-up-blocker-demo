@@ -8,7 +8,7 @@
     "build": "run-s build:*",
     "build:css": "npm run generate:css -- --minify",
     "build:js": "remix build",
-    "dev": "run-p dev:*",
+    "dev": "npm run generate:css && run-p dev:*",
     "dev:css": "npm run generate:css -- --watch",
     "dev:js": "remix dev",
     "generate:css": "npx tailwindcss -o ./app/tailwind.css",
