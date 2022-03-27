@@ -15,9 +15,10 @@ Open this example on
 
 ## Relevant files
 
-- [`admin/index.tsx`](./app/routes/admin/index.tsx) - Defines `LoginWithGet` and
-  `LoginWithPost` components, which handle opening a new window and making the
-  auth token request.
+- [`admin/index.tsx`](./app/routes/admin/index.tsx) - Defines
+  [`LoginWithGet`](./app/routes/admin/index.tsx#L45) and
+  [`LoginWithPost`](./app/routes/admin/index.tsx#L67) components, which handle
+  opening a new window and making the auth token request.
 - [`admin/login-as.tsx`](./app/routes/admin/login-as.tsx) - For the GET request,
   this file acts as a placeholder for your user. For the POST request, this also
   handles submitting the POST request once the auth token has been fetched.
