@@ -4,9 +4,9 @@ This repo demonstrates various methods for navigating a user to a new window
 without triggering a popup blocker, particularly when you need to wait for an
 async operation like requesting an auth token.
 
-<!-- TODO: Update this link -->
-
-Read [the blog post](https://mikepalmer.dev/blog) for more details.
+Read
+[the blog post](https://mikepalmer.dev/blog/open-a-new-window-without-triggering-pop-up-blockers)
+for more details.
 
 ## Preview
 
